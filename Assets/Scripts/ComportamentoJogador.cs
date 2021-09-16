@@ -8,6 +8,7 @@ public class ComportamentoJogador : MonoBehaviour
     public float aceleracao = 1.0f;
     public float velocidadeAngular = 180.0f;
     public float velocidadeMaxima = 5.0f;
+    public int tempoSegundosProtejil = 1;
 
     public Rigidbody2D prefabProjetil;
     public float velocidadeProjetil = 10.0f;
@@ -24,6 +25,7 @@ public class ComportamentoJogador : MonoBehaviour
         {
             Rigidbody2D projetil = Instantiate(prefabProjetil, myRigidbody2D.position, Quaternion.identity);
             projetil.velocity = transform.up * velocidadeProjetil;
+            Destroy(projetil.gameObject, tempoSegundosProtejil);
         }
     }
 
