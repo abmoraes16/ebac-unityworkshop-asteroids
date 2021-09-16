@@ -114,7 +114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidBody: {fileID: 2736637656395448510}
+  prefabFragmento: {fileID: -1232523280501361286, guid: f69b1105db54dbf49a74c50fed38f4b8, type: 3}
   velocidadeMaxima: 1
+  altura: 1
+  largura: 1
+  QuantidadeFragmentos: 3
 --- !u!50 &2736637656395448510
 Rigidbody2D:
   serializedVersion: 4

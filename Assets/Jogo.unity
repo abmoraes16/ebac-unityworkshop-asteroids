@@ -471,5 +471,6 @@ MonoBehaviour:
   aceleracao: 1
   velocidadeAngular: 180
   velocidadeMaxima: 5
+  tempoSegundosProtejil: 1
   prefabProjetil: {fileID: 1481233479386182866, guid: 4f96b8ab0cb8d9044b88a16f687f6c87, type: 3}
   velocidadeProjetil: 10
