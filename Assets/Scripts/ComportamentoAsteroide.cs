@@ -5,6 +5,7 @@ using UnityEngine;
 public class ComportamentoAsteroide : MonoBehaviour
 {
     public static System.Action EventoAsteroideDestruido = null;
+    public EfeitoAsteroideDestruido prefEfeitoDestruido;
     public Rigidbody2D myRigidBody;
     public ComportamentoAsteroide prefabFragmento;
     public float velocidadeMaxima = 1.0f;
@@ -22,9 +23,6 @@ public class ComportamentoAsteroide : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D outro)
     {
-        Destroy(gameObject);
-        Destroy(outro.gameObject);
-        
         for(int i=0; i < QuantidadeFragmentos; i++)
         {
             float diametro = Random.Range(0.2f, 0.6f);
@@ -36,6 +34,11 @@ public class ComportamentoAsteroide : MonoBehaviour
         if(EventoAsteroideDestruido != null)
         {
             EventoAsteroideDestruido();
-        }    
+        }
+
+        Instantiate(prefEfeitoDestruido, myRigidBody.position, Quaternion.identity);
+
+        Destroy(gameObject);
+        Destroy(outro.gameObject);
     }
 }

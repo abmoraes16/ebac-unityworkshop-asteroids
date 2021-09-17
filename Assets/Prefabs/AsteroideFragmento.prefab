@@ -113,11 +113,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db561a13daff7e24f96c8c79fbc61a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefEfeitoDestruido: {fileID: 8366944817839836679, guid: 4b00137363456a547b6d1f54e2a46dc7, type: 3}
   myRigidBody: {fileID: 2736637656395448510}
-  comportamentoAsteroide: {fileID: 0}
+  prefabFragmento: {fileID: 0}
   velocidadeMaxima: 1
-  altura: 1
-  largura: 1
+  altura: 0.5516482
+  largura: 0.5516482
   QuantidadeFragmentos: 0
 --- !u!50 &2736637656395448510
 Rigidbody2D:

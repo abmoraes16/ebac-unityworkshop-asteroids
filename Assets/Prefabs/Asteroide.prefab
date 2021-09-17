@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db561a13daff7e24f96c8c79fbc61a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefEfeitoDestruido: {fileID: 8366944817839836679, guid: 4b00137363456a547b6d1f54e2a46dc7, type: 3}
   myRigidBody: {fileID: 2736637656395448510}
   prefabFragmento: {fileID: -1232523280501361286, guid: f69b1105db54dbf49a74c50fed38f4b8, type: 3}
   velocidadeMaxima: 1
