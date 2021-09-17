@@ -16,7 +16,6 @@ public class ComportamentoJogador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     void Update()
@@ -28,8 +27,6 @@ public class ComportamentoJogador : MonoBehaviour
             Destroy(projetil.gameObject, tempoSegundosProtejil);
         }
     }
-
-    // Update is called once per frame
 
     // execucao de codigo de fisica FixedUpdate - 
     void FixedUpdate()
