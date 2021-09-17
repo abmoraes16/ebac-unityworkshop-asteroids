@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ComportamentoAsteroide : MonoBehaviour
 {
+    public static System.Action EventoAsteroideDestruido = null;
     public Rigidbody2D myRigidBody;
     public ComportamentoAsteroide prefabFragmento;
     public float velocidadeMaxima = 1.0f;
@@ -31,5 +32,10 @@ public class ComportamentoAsteroide : MonoBehaviour
             prefabFragmento.altura = diametro;
             prefabFragmento.largura = diametro;
         }
+
+        if(EventoAsteroideDestruido != null)
+        {
+            EventoAsteroideDestruido();
+        }    
     }
 }
